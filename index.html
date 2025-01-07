@@ -8,6 +8,15 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .arabic-text {
+      font-family: 'Noto Naskh Arabic', serif;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,20 +27,27 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Maitham F. AL-Sunni</name>
-</p>
-              <p>I am an MS student in  <a href="https://www.ece.cmu.edu/">The Department of Electrical and Computer Engineering</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>.
-              <p>
-                I did my BS in Control and Instrumentation Systems Engineering at <a href="https://www.kfupm.edu.sa/">King Fahd University of Petroleum and Minerals</a>.
+                <name>Maitham F. AL-Sunni <span class="arabic-text">(ميثم)</span></name>
               </p>
-          	</p>
+              <p style="text-align: justify">
+                I am a PhD student in the <a href="https://www.ece.cmu.edu/"> Department of Electrical and Computer Engineering (ECE)</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a> where I am fortunate to be advised by <a href="https://www.ri.cmu.edu/ri-faculty/john-m-dolan/">Dr. John M. Dolan</a>. I am interested in developing safe and adaptive control techniques that enable robotic systems to safely and efficiently accomplish their tasks.
+              </p>
+              <p style="text-align: justify">
+                Prior to my doctoral studies, I received my MS degree in ECE from CMU, in December 2023, and my BS degree in <a href="https://cie.kfupm.edu.sa/">Control and Instrumentation Systems Engineering</a> from <a href="https://kfupm.edu.sa/">King Fahd University of Petroleum and Minerals (KFUPM)</a>, Dhahran, Saudi Arabia, in December 2020. 
+              </p>
+              <p style="text-align: justify">
+              Since March 2021, I have been a graduate assistant (currently on a leave of absence) with the <a href="https://cie.kfupm.edu.sa/">Control and Instrumentation Engineering Department </a> at <a href="https://kfupm.edu.sa/">KFUPM</a>.
+              </p>
+
+              <p style="text-align: justify">
+              Email me at maitham AT cmu DOT edu
+              </p>
+            </p>
       		</p>
               <p style="text-align:center">
-                <a href="mailto:malsunni@andrew.cmu.edu">Email</a> &nbsp/&nbsp
                 <a href="data/maitham_cv.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=CrVPlzgAAAAJ&view_op=list_works&authuser=1&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://twitter.com/">Twitter</a> &nbsp/&nbsp
-                <a href="https://github.com/">Github</a>
+                <a href="https://www.linkedin.com/in/mfalsunni">Linkedin</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=CrVPlzgAAAAJ&view_op=list_works&authuser=1&sortby=pubdate">Google Scholar</a>
               </p>
             </td>
             <td style="padding:2.5%;width:60%;max-width:60%">
@@ -43,14 +59,86 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-              <p>
-                I'm interested in 
-              </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-     
+    
+          <tr bgcolor=#eee>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/acc25.png" alt="b3do" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Safety Embedded Adaptive Control Using Barrier States</papertitle>
+              <br>
+              <strong>Maitham F. AL-Sunni</strong>,
+              Hassan Almubarak,
+              <a href="https://www.ri.cmu.edu/ri-faculty/john-m-dolan/"> John M. Dolan</a>
+
+
+              <br>
+              <em>American Control Conference, 2025 (in review)</em>
+              <br>
+              <a href="">arXiv (coming soon)</a> 
+              <p>In this work, we explore the application of barrier states (BaS) in the realm of safe nonlinear adaptive control. Our proposed framework derives barrier states for systems with parametric uncertainty, which are augmented into the uncertain dynamical model. We employ an adaptive nonlinear control strategy based on a control Lyapunov functions approach to design a stabilizing controller for the augmented system. The developed theory shows that the controller ensures safe control actions for the original system while meeting specified performance objectives. We validate the effectiveness of our approach through simulations on diverse systems, including a planar quadrotor subject to unknown drag forces and an adaptive cruise control system, for which we provide comparisons with existing methodologies.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/aaai23.png" alt="b3do" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>Rethinking Safe Control in the Presence of Self-Seeking Humans </papertitle>
+              <br>
+              Zixuan Zhang*,
+              <strong>Maitham F. AL-Sunni*</strong>,
+              Haoming Jing*,
+              H. Shirado,
+              Y. Nakahira
+
+
+              <br>
+              <em>AAAI Conference on Artificial Intelligence, 2023</em>
+              <br>
+              <a href="https://arxiv.org/abs/2212.00295">arXiv</a> 
+              <p>Safe control methods are often designed to behave safely even in worst-case human uncertainties. Such design can cause more aggressive human behaviors that exploit its conservatism and result in greater risk for everyone. However, this issue has not been systematically investigated previously. This paper uses an interaction-based payoff structure from evolutionary game theory to model humans' short-sighted, self-seeking behaviors. The model captures how prior human-machine interaction experience causes behavioral and strategic changes in humans in the long term. We then show that deterministic worst-case safe control techniques and equilibrium-based stochastic methods can have worse safety and performance trade-offs than a basic method that mediates human strategic changes. This finding suggests an urgent need to fundamentally rethink the safe control framework used in human-technology interaction in pursuit of greater safety for all.
+              </p>
+            </td>
+          </tr>
+
+          <tr bgcolor=#eee>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ssd22.png" alt="b3do" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+                <papertitle>On Smoothing the Duck Curve: A Control Perspective</papertitle>
+              <br>
+              <strong>Maitham F. AL-Sunni*</strong>,
+              Turki Bin-Mohaya*,
+              Khaled Alshehri,
+              Haitham Saleh,
+              Abdul-Wahid Saif
+
+              <br>
+              <em>International Multi-Conference on Systems, Signals & Devices (SSD), 2022</em>
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9955984">IEEE Xplore</a>
+              <p>The increased adoption of small-scale solar photo-voltaics (PVs) has led to drastic changes in the aggregate load profile in multiple locations, resulting in what is called the “Duck Curve.” This adds a burden on system operators and might, in fact, jeopardize real-time operations and control. In this paper, we address these issues via learning-based control and develop an online method to flatten the duck curve by optimizing standard-sized batteries. In particular, we use deep learning in conjunction with model predictive control (MPC), i.e., we forecast solar power and demand and then utilize these forecasts to optimize storage over a prediction horizon. In our approach, forecasts take into account behavioral aspects of load consumption, and we also propose an objective function that mimics the Peak-to-Average power ratio. We have conducted numerical experiments using real data, and the results are promising, demonstrating a reduction of about 67% of the Peak-to-Average power ratio.
+              </p>
+            </td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
 
         </tbody></table>
 		
