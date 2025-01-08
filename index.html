@@ -16,6 +16,23 @@
       font-family: 'Noto Naskh Arabic', serif;
       font-size: 1.1em;
     }
+    name {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    @media screen and (max-width: 768px) {
+      div[style*="display:flex"] {
+        flex-direction: column-reverse;
+      }
+      .profile-image {
+        width: 200px;
+        margin: 20px auto;
+      }
+      .profile-image img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
   </style>
 </head>
 
