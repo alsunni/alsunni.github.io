@@ -20,13 +20,23 @@
       display: inline-block;
       white-space: nowrap;
     }
+    .mobile-image {
+      display: none;
+    }
     @media screen and (max-width: 768px) {
       td {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
       }
-      img {
+      .desktop-image {
+        display: none !important;
+      }
+      .mobile-image {
+        display: block;
+        margin: 20px auto;
+      }
+      .mobile-image img {
         max-width: 50% !important;
         margin: 0 auto;
         display: block;
@@ -66,7 +76,7 @@
                 <a href="https://scholar.google.com/citations?hl=en&user=CrVPlzgAAAAJ&view_op=list_works&authuser=1&sortby=pubdate">Google Scholar</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:37%;max-width:37%">
+            <td style="padding:2.5%;width:37%;max-width:37%" class="desktop-image">
               <a href="images/profile_photo.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_photo.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
